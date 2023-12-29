@@ -8,8 +8,8 @@ erDiagram
   MEMBER ||--o{ ACCOUNT : has
   ACCOUNT ||--o{ ENTRY : has
   MEMBER ||--o{ ENTRY : has
-  MEMBER ||--|| ALLOWANCE : has
-  ALLOWANCE ||--o{ ALLOCATION : has
+  MEMBER ||--|| SCHEDULE : has
+  SCHEDULE ||--o{ ALLOCATION : has
   ALLOCATION ||--|| ACCOUNT : has
 ```
 
