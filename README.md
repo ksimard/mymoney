@@ -9,11 +9,11 @@ erDiagram
   ACCOUNT ||--o{ ENTRY : has
   MEMBER ||--o{ ENTRY : has
   MEMBER ||--|| SCHEDULE : has
-  SCHEDULE ||--o{ ALLOCATION : has
+  SCHEDULE ||--|{ ALLOCATION : has
   ALLOCATION |o--|| ACCOUNT : has
-  MEMBER ||--o{ WISH
-  WISH ||--o| ACCOUNT
-  WISH }o--o{ LIST
+  MEMBER ||--o{ WISH : has
+  WISH ||--o| ACCOUNT : has
+  WISH }o--o{ LIST : has
 ```
 
 - Lists can be shared via secure link (no need for viewer to sign up for account)
